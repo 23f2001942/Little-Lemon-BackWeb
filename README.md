@@ -1,6 +1,6 @@
 # 🍋 Little Lemon Backend Web Application
 
-**Little Lemon Backend Web Application** is a Django-based backend system developed for a fictitious restaurant named *Little Lemon*. This project was created as the **final capstone** for the [Meta Back-End Developer Specialization Certificate Course](https://www.coursera.org/learn/back-end-developer-capstone/).
+**Little Lemon Backend Web Application** is a Django-based backend system developed for a fictitious restaurant named *Little Lemon*. This project was created as the **final capstone** for the Meta Back-End Developer Specialization Certificate Course.
 
 ---
 
@@ -89,3 +89,67 @@ All API endpoints are prefixed with:
 #### `GET /book/<int:pk>/`, `DELETE /book/<int:pk>/`
 - **Access:** Admin only
 - **Description:** View or delete a specific booking
+
+---
+
+## 🧪 Testing
+
+The project includes unit tests for models and views.
+
+To run tests:
+
+```bash
+python manage.py test
+```
+
+### Structure of Tests
+
+Tests are organized in the `tests/` directory:
+
+- `test-model.py` – Covers model behaviors (e.g., Menu and Booking models)
+- `test_views.py` – Tests API endpoints and view logic
+
+All tests are written using Django's built-in `TestCase` framework.
+
+---
+
+## 🧱 Project Structure
+
+```
+Little-Lemon-BackWeb/
+├── littlelemon/                  # Django project config (settings, URLs, WSGI, ASGI)
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+│
+├── restaurant/                  # Main app with views, models, and templates
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── urls.py
+│   ├── views.py
+│   ├── migrations/
+│   │   ├── 0001_initial.py
+│   │   └── __init__.py
+│   ├── static/
+│   └── templates/
+│       └── index.html
+│
+├── tests/                       # Unit test suite
+│   ├── test-model.py
+│   └── test_views.py
+│
+├── manage.py                   # Django project manager script
+├── LICENSE                     # MIT License
+└── README.md                   # Project overview (this file)
+```
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
