@@ -1,6 +1,6 @@
 # 🍋 Little Lemon Backend Web Application
 
-**Little Lemon Backend Web Application** is a Django-based backend system developed for a fictitious Mediterranean restaurant named *Little Lemon*. This project was created as the **final capstone** for the [Meta Back-End Developer Specialization Certificate Course](https://www.coursera.org/learn/back-end-developer-capstone/).
+**Little Lemon Backend Web Application** is a Django-based backend system developed for a fictitious restaurant named *Little Lemon*. This project was created as the **final capstone** for the [Meta Back-End Developer Specialization Certificate Course](https://www.coursera.org/learn/back-end-developer-capstone/).
 
 ---
 
